@@ -2,6 +2,9 @@
 
 Project tugas: aplikasi NoteKeeper bertenaga AsyncStorage — CRUD, persistensi, dan fitur pengembangan.
 
+## Deskripsi Aplikasi
+NoteKeeper adalah aplikasi catatan sederhana untuk membuat, melihat, dan menghapus catatan. Data disimpan secara lokal menggunakan `AsyncStorage` sehingga catatan tetap ada setelah aplikasi ditutup atau perangkat direstart. UI menggunakan `FlatList` untuk menampilkan daftar dan menyediakan toggle untuk Dark Mode yang tersimpan.
+
 ## Fitur
 - CREATE: tambah catatan (validasi input kosong)
 - READ: muat data dari `AsyncStorage` saat app dibuka
@@ -14,6 +17,8 @@ Project tugas: aplikasi NoteKeeper bertenaga AsyncStorage — CRUD, persistensi,
 - Toggle status selesai (tap item untuk toggle)
 - Dark Mode tersimpan (toggle disimpan di `AsyncStorage`)
 - Konfirmasi Hapus dan Tombol "Hapus Semua"
+
+> Level 2 dipilih: Toggle status selesai, Dark Mode tersimpan, Konfirmasi Hapus
 
 ## Cara menjalankan (development)
 1. Install dependencies (sudah ada `expo`/`package.json`):
@@ -56,6 +61,14 @@ Cara membuat Expo Snack dari repo:
 - `screenshot-2.png` — dark mode aktif
 - `screenshot-3.png` — bukti persistensi (sebelum & sesudah tutup-buka)
 
+Catatan persistensi (cara ambil bukti):
+
+- 1) Jalankan app di Expo Go → tambahkan beberapa catatan → ambil `screenshot-3-before.png`.
+- 2) Tutup aplikasi sepenuhnya (swipe-away / force close) → buka kembali app → ambil `screenshot-3-after.png`.
+- 3) Pastikan daftar item masih sama pada `screenshot-3-after.png`.
+
+Letakkan screenshot di folder `screenshots/` lalu commit.
+
 Petunjuk cepat ambil screenshot:
 
 - Android (Expo Go): buka app di HP → tahan power+volume down (atau gunakan fitur screenshot bawaan) → pindahkan file ke PC dan letakkan di folder repo `screenshots/`.
@@ -70,6 +83,38 @@ Setelah Anda menambahkan link Snack dan screenshot, beri tahu saya — saya akan
 ## Commit example
 - `feat: add dark mode persistence`
 - `feat: add asyncstorage persistence and CRUD`
+
+## Tech stack
+- React Native (Expo)
+- AsyncStorage (`@react-native-async-storage/async-storage`)
+- JavaScript (ES6+)
+
+## Cara menjalankan & testing (ringkas)
+1. Install dependencies:
+
+```bash
+npm install
+# atau
+yarn
+```
+
+2. Jalankan Expo:
+
+```bash
+npx expo start
+```
+
+3. Scan QR dengan Expo Go di HP fisik, lalu verifikasi test case:
+- Create: tambah item baru (input tidak boleh kosong)
+- Read / Persistensi: tutup app lalu buka lagi — data harus tetap ada
+- Delete: hapus satu item (konfirmasi muncul)
+- Toggle done: tap item untuk menandai selesai/membatalkan
+- Dark Mode: aktifkan dark mode → tutup-buka app → mode tetap tersimpan
+
+## Expo Snack
+- Untuk memudahkan pemeriksa, buat Snack di https://snack.expo.dev/.
+- Pilih "Import from GitHub" dan gunakan: `darmanaa/PERTEMUAN-12` atau salin `App.js`.
+- Setelah membuat Snack, tempelkan link di bagian `Snack:` di atas.
 
 ## Notes
 - Saya sudah mengimplementasikan CRUD + persistensi + Dark Mode + toggle-done + konfirmasi hapus.
