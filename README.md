@@ -42,13 +42,30 @@ npx expo start
 ## Struktur file penting
 - `App.js` — UI dan logika AsyncStorage
 
-## Expo Snack (tambahkan link di sini)
+## Expo Snack
 - Snack: (tempel link snack.expo.dev di sini)
 
+Cara membuat Expo Snack dari repo:
+
+1. Buka https://snack.expo.dev/
+2. Pilih "Import from GitHub" dan masukkan repo: `darmanaa/PERTEMUAN-12` atau salin file `App.js` ke editor Snack.
+3. Simpan Snack dan tempel linknya di bagian README ini.
+
 ## Screenshot (tambahkan file/tautan)
-- screenshot-1.png — daftar item
-- screenshot-2.png — dark mode aktif
-- screenshot-3.png — bukti persistensi (sebelum & sesudah tutup-buka)
+- `screenshot-1.png` — daftar item
+- `screenshot-2.png` — dark mode aktif
+- `screenshot-3.png` — bukti persistensi (sebelum & sesudah tutup-buka)
+
+Petunjuk cepat ambil screenshot:
+
+- Android (Expo Go): buka app di HP → tahan power+volume down (atau gunakan fitur screenshot bawaan) → pindahkan file ke PC dan letakkan di folder repo `screenshots/`.
+- iOS (Expo Go): tekan side button + volume up → impor ke Mac/PC → simpan di `screenshots/`.
+
+File naming dan rekomendasi:
+- Simpan minimal 3 screenshot dengan nama sesuai di atas.
+- Taruh di folder `screenshots/` pada repo lalu commit dan push.
+
+Setelah Anda menambahkan link Snack dan screenshot, beri tahu saya — saya akan bantu update README dan push commit jika perlu.
 
 ## Commit example
 - `feat: add dark mode persistence`
