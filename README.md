@@ -57,32 +57,41 @@ Cara membuat Expo Snack dari repo:
 3. Simpan Snack dan tempel linknya di bagian README ini.
 
 ## Screenshot (tambahkan file/tautan)
-- `screenshot-1.png` — daftar item
-- `screenshot-2.png` — dark mode aktif
-- `screenshot-3.png` — bukti persistensi (sebelum & sesudah tutup-buka)
+## Screenshot (tambahkan file/tautan)
 
-Catatan persistensi (cara ambil bukti):
+- `screenshots/screenshot-1.png` — Daftar item (<a href="https://ibb.co.com/G4FHxm50"><img src="https://i.ibb.co.com/G4FHxm50/Whats-App-Image-2026-06-27-at-23-24-45.jpg" alt="Whats-App-Image-2026-06-27-at-23-24-45" border="0"></a>). Gunakan screenshot yang jelas.
+- `screenshots/screenshot-2.png` — Dark mode aktif (<a href="https://ibb.co.com/ksKnMFZy"><img src="https://i.ibb.co.com/ksKnMFZy/Whats-App-Image-2026-06-27-at-23-24-44-1.jpg" alt="Whats-App-Image-2026-06-27-at-23-24-44-1" border="0"></a>).
+- `screenshots/screenshot-3-before.png` — Bukti persistensi (<a href="https://ibb.co.com/ksKnMFZy"><img src="https://i.ibb.co.com/ksKnMFZy/Whats-App-Image-2026-06-27-at-23-24-44-1.jpg" alt="Whats-App-Image-2026-06-27-at-23-24-44-1" border="0"></a>): ambil setelah menambahkan catatan.
+- `screenshots/screenshot-3-after.png` — Bukti persistensi (<a href="https://ibb.co.com/wZ1KHVLN"><img src="https://i.ibb.co.com/wZ1KHVLN/Whats-App-Image-2026-06-27-at-23-24-44.jpg" alt="Whats-App-Image-2026-06-27-at-23-24-44" border="0"></a>): ambil setelah menutup app sepenuhnya dan membuka kembali — isi daftar harus sama seperti `screenshot-3-before.png`.
 
-- 1) Jalankan app di Expo Go → tambahkan beberapa catatan → ambil `screenshot-3-before.png`.
-- 2) Tutup aplikasi sepenuhnya (swipe-away / force close) → buka kembali app → ambil `screenshot-3-after.png`.
-- 3) Pastikan daftar item masih sama pada `screenshot-3-after.png`.
+Langkah cepat untuk bukti persistensi:
 
-Letakkan screenshot di folder `screenshots/` lalu commit.
+1. Jalankan app di Expo Go dan tambahkan 2–4 catatan.
+2. Ambil `screenshots/screenshot-3-before.png` (screenshot daftar saat ini).
+3. Tutup aplikasi sepenuhnya (swipe-away / force close) lalu buka kembali Expo Go dan app.
+4. Ambil `screenshots/screenshot-3-after.png` dan pastikan isinya sama.
 
-Petunjuk cepat ambil screenshot:
+Petunjuk mengambil screenshot dan mengunggah:
 
-- Android (Expo Go): buka app di HP → tahan power+volume down (atau gunakan fitur screenshot bawaan) → pindahkan file ke PC dan letakkan di folder repo `screenshots/`.
-- iOS (Expo Go): tekan side button + volume up → impor ke Mac/PC → simpan di `screenshots/`.
+- Android (Expo Go): tekan `Power` + `Volume Down` → sambungkan HP ke PC → salin file ke folder repo `screenshots/`.
+- iOS (Expo Go): tekan `Side Button` + `Volume Up` → impor ke Mac/PC → simpan di `screenshots/`.
 
-File naming dan rekomendasi:
-- Simpan minimal 3 screenshot dengan nama sesuai di atas.
-- Taruh di folder `screenshots/` pada repo lalu commit dan push.
+Rekomendasi:
 
-Setelah Anda menambahkan link Snack dan screenshot, beri tahu saya — saya akan bantu update README dan push commit jika perlu.
+- Simpan gambar dalam format PNG atau JPG, ukuran wajar (<= 2 MB). Nama file sesuai contoh di atas.
+- Letakkan file di folder `screenshots/` dalam repo dan commit dengan pesan `chore: add screenshots`.
+
+Setelah Anda menambahkan file screenshot, beri tahu saya — saya akan bantu tambahkan preview (thumbnail) ke README dan push commit.
 
 ## Commit example
-- `feat: add dark mode persistence`
-- `feat: add asyncstorage persistence and CRUD`
+## Commit examples (Conventional Commits)
+- `feat(notes): add AsyncStorage persistence and CRUD` — tambah persistensi dan operasi CRUD untuk catatan.
+- `feat(ui): add dark mode toggle and persistence` — tambah toggle Dark Mode dan simpan preferensi.
+- `fix(notes): prevent empty note submission` — perbaikan validasi input kosong.
+- `chore(deps): bump dependencies` — pemeliharaan dependensi.
+- `docs: update README with run steps and screenshots` — perubahan dokumentasi (README, screenshot instructions).
+
+Gunakan format di atas untuk commit agar riwayat jelas dan memudahkan penilaian.
 
 ## Tech stack
 - React Native (Expo)
