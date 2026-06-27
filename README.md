@@ -119,3 +119,7 @@ npx expo start
 ## Notes
 - Saya sudah mengimplementasikan CRUD + persistensi + Dark Mode + toggle-done + konfirmasi hapus.
 - Mau saya push repo ke GitHub dan buat Expo Snack sekarang? (butuh akses remote dan akun)
+
+##
+-Nama: Darman Michael Purba
+-nim:243303621212
